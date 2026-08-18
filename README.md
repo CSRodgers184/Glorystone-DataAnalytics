@@ -11,8 +11,10 @@ Professional portfolio of end-to-end data analysis projects framed around real o
 ## Projects
 
 ### 01 – Online Grocery Fulfillment Performance Review
-**Status:** In Progress  
+**Status:** Complete  
 **Business Question:** Which stores show the clearest operational friction in online order fulfillment, and what actions should Glorystone take in the next 60–90 days?
+
+**Key Finding:** GS-09 and GS-04 are significant outliers on readiness delay and fill rate.
 
 → [Project folder](01-online-fulfillment-performance/)
 
