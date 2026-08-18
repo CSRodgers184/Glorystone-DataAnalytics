@@ -1,46 +1,29 @@
 # Field Assignment 01: Online Grocery Fulfillment Performance Review
 
-**Glorystone Data Analytics Portfolio**  
-**Status:** In Progress  
-**Date Started:** 17 August 2026
+**Status:** Complete  
+**Date:** August 2026  
+**Glorystone Data Analytics Portfolio**
 
 ## Business Question
-Which stores (or store groups) show the clearest operational friction in online order fulfillment, and what specific actions should Glorystone take in the next 60–90 days?
+Which stores show the clearest operational friction in online order fulfillment, and what specific actions should Glorystone take in the next 60–90 days?
 
-## Dataset
-- **File:** `data/glorystone_online_pickup_orders.csv`
-- **Orders:** 8,500
-- **Period:** 1 Nov 2025 – 30 Apr 2026
-- **Stores:** GS-01 to GS-12 across North, Central, South, East, and West regions
+## Key Findings
+- Operational friction is highly concentrated in **GS-09** and **GS-04**.
+- These two stores run **14–17 minutes slower** on average readiness delay than the rest of the network.
+- They also show meaningfully lower fill rates and higher substitution rates.
+- The delay problem is present across most of the operating day (not limited to a single peak hour).
 
-### Columns
-| Column | Description |
-|--------|-------------|
-| order_id | Unique order identifier |
-| store_id | Store code (GS-01 … GS-12). Some missing values present. |
-| region | Geographic region |
-| order_datetime | Customer order placement time |
-| promised_ready_datetime | Promised ready-for-pickup time |
-| actual_ready_datetime | Actual ready-for-pickup time |
-| pickup_datetime | Customer pickup time (null = no-show / not yet picked) |
-| items_ordered | Items in original order |
-| items_fulfilled | Items actually provided |
-| substitution_count | Number of substitutions |
-| is_complete | True if fully fulfilled with zero substitutions |
-| order_value | Approximate order value ($) |
+## Priority Actions (60–90 days)
+1. Conduct a focused on-hand accuracy audit at GS-09 and GS-04 for the highest-volume and highest-substitution items. Correct inventory records and adjust replenishment settings where systemic discrepancies are found.
+2. Pull a substitution detail report for both stores to identify the specific items most frequently substituted. Prioritize those items for inventory correction and supplier reliability checks.
+3. Hold a structured working session with the Team Leads at GS-09 and GS-04. Share the delay and fill-rate data, set clear readiness targets, and surface the operational obstacles they are seeing on the floor.
 
-## Analysis Focus
-- Readiness delay (actual vs promised)
-- Fill / completeness rate
-- Substitution rate
-- No-show rate
-- Performance by store, region, hour of day, day of week
-- Prioritized operational recommendations
+## Expected Impact
+Improving on-hand accuracy should raise fill rates and reduce substitution volume. Combined with clearer targets and input from the store teams, average readiness delay at these two stores is expected to move closer to the network average within 60–90 days.
 
-## Deliverables
-- Clean Jupyter notebook with full end-to-end analysis
-- Supporting charts and summary tables
-- Clear, prioritized recommendations for operations leadership
+## Files
+- `01_fulfillment_performance_analysis.ipynb` — Full end-to-end analysis
+- `data/glorystone_online_pickup_orders.csv` — Source data (8,500 orders)
 
 ---
-*This is a portfolio project demonstrating end-to-end operational analytics for a Domain Specialist role.*
+*This project demonstrates end-to-end operational analytics: clear business question → data cleaning & feature engineering → diagnostic summary → focused deep dive → specific, prioritized recommendations.*
