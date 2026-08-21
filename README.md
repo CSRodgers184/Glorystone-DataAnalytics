@@ -26,6 +26,14 @@ Professional portfolio of end-to-end data analysis projects framed around real o
 
 → [Project folder](02-customer-wait-and-abandonment/)
 
+### 03 – Regional Prioritization for Operational Investment
+**Status:** In Progress  
+**Business Question:** Which regions (and the stores within them) should Glorystone prioritize for operational improvement investment over the next 90 days, based on a balanced view of volume, fulfillment performance, customer experience, and revenue exposure?
+
+**Early Finding:** Central and South match North on volume and revenue but lag sharply on readiness, fill rate, and completeness. The gap is driven primarily by GS-04 and GS-09.
+
+→ [Project folder](03-regional-prioritization/)
+
 ---
 
 ## Approach
