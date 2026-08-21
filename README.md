@@ -18,6 +18,14 @@ Professional portfolio of end-to-end data analysis projects framed around real o
 
 → [Project folder](01-online-fulfillment-performance/)
 
+### 02 – Customer Wait & Abandonment Analysis
+**Status:** Complete  
+**Business Question:** After an order is marked ready, how long do customers wait to pick up, which stores and conditions drive elevated wait times or non-pickup, and what operational changes should Glorystone make in the next 60–90 days?
+
+**Key Finding:** Customer wait averages ~36 minutes (median 34) network-wide. Store differences are small. Wait is independent of readiness delay, completeness, and substitutions. Early-morning abandonment (6–7 a.m.) is elevated.
+
+→ [Project folder](02-customer-wait-and-abandonment/)
+
 ---
 
 ## Approach
